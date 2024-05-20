@@ -126,13 +126,14 @@ header .content p{
 }
 
 header .container .image img{
-    position: absolute;
-    width: 80%;
+    /* position: absolute; */
+    max-width: 80%;
+    height: auto;
 }
 
 header .image{
     position: relative;
-    max-width: 400%;
+    /* max-width: 400%; */
 }
 
 header .image::before{
@@ -152,7 +153,7 @@ header .image::before{
 header .image img{
     /* position: absolute; */
     max-width: 80%;
-    /* margin: auto; */
+    margin: auto;
 }
 
 section .header{
@@ -373,11 +374,11 @@ footer .column > a:hover{
     .nav-links{
         display: none;
     }
-    .header{
+    header{
         grid-template-columns: repeat(1, 1fr);
     }
     header .image{
-        /* grid-area: 1/1/2/2; */
+        grid-area: 1/1/2/2;
     }
     .features{
         grid-template-columns: repeat(2, 1fr);
