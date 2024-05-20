@@ -364,8 +364,12 @@ footer .column > a:hover{
 
 /* Media Queries */
 
-@media (width < 900px) {
- 
+/* Laptop */
+@media (max-width : 1366px) {
+}
+
+/* Tablet */
+@media (max-width : 758px) {
     .nav-links{
         display: none;
     }
@@ -387,10 +391,10 @@ footer .column > a:hover{
 }
 
 /* Mobile Phone */
-/* @media (max-width : 450px) {
-    html {
+@media (max-width : 450px) {
+    /* html {
         font-size: 62.5%;
-    }
+    } */
     header .image::before{
         display: none;
     }
@@ -403,4 +407,4 @@ footer .column > a:hover{
     footer{
         grid-template-columns: 1fr 150px;
     }
-} */
+}
