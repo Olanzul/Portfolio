@@ -14,14 +14,14 @@ const link2 = document.getElementById('link2');
 const link3 = document.getElementById('link3');
 
 link1.addEventListener('click', () => {
-    scrollToElement('.header');
+    scrollToElement('header');
 });
 
 link2.addEventListener('click', () => {
     // Scroll to the second element with 'header' class
-    scrollToElement('.header', 1);
+    scrollToElement('.features');
 });
 
 link3.addEventListener('click', () => {
-    scrollToElement('.column');
+    scrollToElement('footer');
 });
