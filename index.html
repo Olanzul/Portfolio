@@ -1,163 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="/js/script.js"></script>
     <title>Personal Portfolio #1 | Olan</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="./Assets/logo.png" alt="">
-            </a>
-        </div>
+      <div class="nav-logo">
+        <a href="#">
+          <img src="./Assets/logo.png" alt="" />
+        </a>
+      </div>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
 
-        <button class="btn">Hire Me</button>
+      <button class="btn">Hire Me</button>
     </nav>
 
-    <header class="container">
-        <div class="hero">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h1>CREATE YOUR SITE LIKE A PRO</h1>
+    <section class="container">
+      <main class="hero">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h2 class="header">Hi, I'm <span>Olan</span></h2>
+        <h1>Aspiring Web Developer</h1>
+        <div>
+          <!-- <h1>CREATE YOUR SITE LIKE A PRO</h1> -->
         </div>
         <div class="image">
-            <img src="./Assets/hero.png" alt="">
+          <img src="./Assets/3.png" alt="" />
         </div>
-    </header>
+      </main>
+    </section>
 
     <section class="container" id="about">
-        <h2 class="header"> Hi, I'm <span>Olan</span></h2>
-        <p>
-            As a career switcher to web development, i bring a unique perspective and a diverse skill set from my previous profession as a staff administrator for 6 years.
-        </p>
-        <div class="about">
-            <div class="card">
-                <span><i class="ri-pencil-fill"></i></span>
-                <h4>Study</h4>
-                <p>
-                    I hold a diploma's degree in Computer Engineering from AMIK Medicom Medan with GPA 3.77.
-                </p>
-                <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
-            </div>
-            <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>Experiences</h4>
-                <p>
-                    During my 6 years working at the ATRBPN ministry as a staff administrator, I have worked on multiple tasks such as field physical data collection officers, managing several administrative applications, to managing social media accounts.
-                </p>
-                <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
-            </div>
-            <div class="card">
-                <span><i class="ri-hourglass-fill"></i></span>
-                <h4>Soft Skills</h4>
-                <p>
-                    I have strong analytical skills and attention to detail, good communication skills, problem-solving skills, enthusiastic about learning new things.
-                </p>
-                <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
-            </div>
+      <p>
+        As a career switcher to web development, i bring a unique perspective
+        and a diverse skill set from my previous profession as a staff
+        administrator for 6 years.
+      </p>
+      <div class="about">
+        <div class="card">
+          <span><i class="ri-pencil-fill"></i></span>
+          <h4>Study</h4>
+          <p>
+            I hold a diploma's degree in Computer Engineering from AMIK Medicom
+            Medan with 3.77 GPA.
+          </p>
+          <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
         </div>
+        <div class="card">
+          <span><i class="ri-history-line"></i></span>
+          <h4>Experiences</h4>
+          <p>
+            During my 6 years working at the ATRBPN ministry, I have worked on
+            multiple tasks such as field physical data collection officers,
+            managing several administrative applications, to managing social
+            media accounts.
+          </p>
+          <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
+        </div>
+        <div class="card">
+          <span><i class="ri-hourglass-fill"></i></span>
+          <h4>Soft Skills</h4>
+          <p>
+            I have strong analytical skills and attention to detail, good
+            communication skills, problem-solving skills, enthusiastic about
+            learning new things.
+          </p>
+          <!-- <a href="#">Join Now <i class="ri-arrow-right-line"></i></a> -->
+        </div>
+      </div>
     </section>
 
     <section class="container" id="projects">
-        <div class="header">My Recent Work</div>
-        <p class="sub-header">
-            Here are a few past projects I've worked on
-        </p>
-        <div class="project-grid">
-            <div class="bmi-calculator">
-                <div class="content">
-                    <p>
-                        A BMI (Body Mass Index) calculator is a tool used to determine an individual's body mass index based on their weight and height.
-                    </p>
-                    <a href="https://kalkulator-bmi-olan.vercel.app/" target="_blank">Visit <i class="ri-arrow-right-s-line"></i></a>
-                </div>
-            </div>
-            <div class="calculator">
-                <div class="content">
-                    <p>
-                        A calculator used to perform mathematical calculations, ranging from basic arithmetic operations to complex mathematical functions.
-                    </p>
-                    <a href="https://calculator-app-olans-projects.vercel.app/" target="_blank">Visit <i class="ri-arrow-right-s-line"></i></a>
-                </div>
-            </div>
-            <div class="weather">
-                <div class="content">
-                    <p>
-                        A weather app provides information about the weather conditions in a specific city or location.
-                    </p>
-                    <a href="https://weather-olan.vercel.app/" target="_blank">Visit <i class="ri-arrow-right-s-line"></i></a>
-                </div>
-            </div>
-            <div class="kenangan-senja">
-                <div class="content">
-                    <p>
-                        A coffee shop website is an online platform where customers can browse, select, and purchase various types of coffee products.
-                    </p>
-                    <a href="https://kenangan-senjazh.vercel.app/" target="_blank">Visit <i class="ri-arrow-right-s-line"></i></a>
-                </div>
-            </div>
+      <h2 class="header">My Recent Work</h2>
+      <p class="sub-header">Here are a few past projects I've worked on</p>
+      <div class="project-grid">
+        <div class="bmi-calculator">
+          <div class="content">
+            <p>
+              A BMI (Body Mass Index) calculator is a tool used to determine an
+              individual's body mass index based on their weight and height.
+            </p>
+            <a href="https://kalkulator-bmi-olan.vercel.app/" target="_blank"
+              >Visit <i class="ri-arrow-right-s-line"></i
+            ></a>
+          </div>
         </div>
+        <div class="calculator">
+          <div class="content">
+            <p>
+              A calculator used to perform mathematical calculations, ranging
+              from basic arithmetic operations to complex mathematical
+              functions.
+            </p>
+            <a
+              href="https://calculator-app-olans-projects.vercel.app/"
+              target="_blank"
+              >Visit <i class="ri-arrow-right-s-line"></i
+            ></a>
+          </div>
+        </div>
+        <div class="weather">
+          <div class="content">
+            <p>
+              A weather app provides information about the weather conditions in
+              a specific city or location.
+            </p>
+            <a href="https://weather-olan.vercel.app/" target="_blank"
+              >Visit <i class="ri-arrow-right-s-line"></i
+            ></a>
+          </div>
+        </div>
+        <div class="kenangan-senja">
+          <div class="content">
+            <p>
+              A coffee shop website is an online platform where customers can
+              browse, select, and purchase various types of coffee products.
+            </p>
+            <a href="https://kenangan-senjazh.vercel.app/" target="_blank"
+              >Visit <i class="ri-arrow-right-s-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="container" id="contacts">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="./Assets/logo.png" alt="">
+    <section class="footer-container" id="contacts">
+      <div class="item">
+        <div class="contact">
+          <h4 class="header">Let's get in touch</h4>
+          <img src="/Assets/hero.png" alt="" class="image" />
+          <div class="social-links">
+            <p>Connect with us</p>
+            <ul class="social-media">
+              <li>
+                <a href="https://web.facebook.com/ZVMirror" target="_blank"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/z_olan/" target="_blank"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:olanzul@gmail.com" target="_blank"
+                  ><i class="ri-mail-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/olanzul"
+                  target="_blank"
+                  ><i class="ri-linkedin-box-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="submit-form">
+          <h4 class="header">Contact Us</h4>
+          <form action="">
+            <div class="input-box">
+              <label for="">Name</label>
+              <input type="text" required />
             </div>
-            <p>
-                Find any interest? Let me know ;)
-            </p>
-            <div class="socials">
-                <a href="#"><i class="ri-mail-fill"></i></a>
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
+            <div class="input-box">
+              <label for="">Email</label>
+              <input type="email" required />
             </div>
+            <!-- <div class="input-box">
+                        <label for="">Phone</label>
+                        <input type="tel"   required>
+                    </div> -->
+            <div class="input-box">
+              <label for="">Message</label>
+              <textarea name="" id="message" cols="21" rows="3"> </textarea>
+            </div>
+            <input type="submit" class="btn" value="submit" />
+            <!-- <button>submit</button> -->
+          </form>
         </div>
-        <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsor</a>
-        </div>
-        <div class="column">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
-       
-    </footer>
-    
-    <div class="copyright">
-        <hr>
-        <span>Copyright © 2024 All Rights Reserved, Olan</span> <br>
+      </div>
+    </section>
+
+    <footer>
+      <div class="credit">
+        <hr />
+        <span>Copyright © 2024 All Rights Reserved, Olan</span> <br />
         <a href="#">Privacy Policy </a>|
         <a href="#">Terms</a>
-          
-    </div>
-    
+      </div>
+    </footer>
 
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>

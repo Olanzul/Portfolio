@@ -25,3 +25,29 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToElement('footer');
 });
+
+
+// Submit Form
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form from submitting the default way
+
+        // Gather form data
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        // Validate form data (basic validation example)
+        if (name && email && subject && message) {
+            alert("Thank you for contacting us, " + name + "! We will get back to you soon.");
+            
+            // Reset the form
+            form.reset();
+        } else {
+            alert("Please fill in all fields.");
+        }
+    });
+});
