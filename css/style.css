@@ -521,12 +521,10 @@ footer .credit {
         font-size: 50%;
     }
 
-    nav {
-        opacity: 0;
+    .nav-logo {
+        max-width:  50px;
     }
-    .about {
-        background-color: aqua;
-    }
+
     .about .row {
         display: flex;
         flex-direction: column;
@@ -553,7 +551,7 @@ footer .credit {
     
     .content a{
         position: absolute;
-        bottom: 100px;
+        bottom: 50px;
         color: #fff;
         padding: 1rem 2rem;
         border: 2px solid var(--secondary);
