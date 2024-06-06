@@ -536,7 +536,22 @@ footer .credit {
         background-position: center;
         height: 300px;
     }    
-    .content:hover{
-        opacity: 1;
+    .content p{
+        position: absolute;
+        top: 50px;
+        text-align: center;
+        padding: 1rem;
+        font-weight: 800;
+        font-size: 1.2rem;
     }
+    
+    .content a{
+        position: absolute;
+        bottom: 100px;
+        color: #fff;
+        padding: 1rem 2rem;
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+    }
+
 }
