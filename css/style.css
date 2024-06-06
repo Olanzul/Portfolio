@@ -524,10 +524,12 @@ footer .credit {
     .about .row {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
     }
     .project .row {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
     }
     .project .bmi-calculator, .calculator, .weather, .kenangan-senja{
         background-size: cover;
