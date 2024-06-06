@@ -40,7 +40,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(2, 4, 31, 0.8);
+    background-color: rgba(39, 39, 42, 0.5);
     border-bottom: 2px solid #fff;
     border-radius: 0 0 1rem 1rem;
     top: 0;
@@ -88,24 +88,41 @@ nav {
     background-color: var(--secondary);
 }
 
-.container{
+section{
     padding: 8rem 7% 1.4rem;
     margin: auto;
     align-items: center;
     position: relative;
-    border: 2px solid var(--secondary);
 }
 
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.hero .left{
+    position: absolute;
+    left: 0;
+}
+
+.left p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image img{
+    position: absolute;
+    right: 0;
+    max-width: 30%;
+    margin: auto;
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #fff;
-    text-shadow: 1px, 1px, 3px, rgba(1, 1, 3, 0.5);
+    text-shadow: 1px, 1px, 3px, rgba(39, 39, 42, 0.5);
     line-height: 1.2;
 }
 
@@ -143,10 +160,6 @@ header .hero p{
     color: #ccc;
 }
 
-header .image img{
-    max-width: 30%;
-    margin: auto;
-}
 
 section .header{
     margin-bottom: 1rem;
@@ -160,7 +173,13 @@ section p{
     color: #fff;
 }
 
-.about{
+/* About Section */
+.about,
+.project {
+    padding: 8rem 1.4rem 7%;
+}
+
+.about .row{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -180,11 +199,11 @@ section p{
 }
 
 .about .card:hover{
-    background-color: #323232;
+    background-color: var(--primary);
     border-color: #fff;
 }
 
-.about .card span{
+.about .card i{
     display: inline-block;
     background-color: var(--secondary);
     padding: 2px 9px;
@@ -214,22 +233,33 @@ section p{
     color: #1e40af;
 }
 
-.sub-header{
+
+/* Product Section */
+.project .row{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: 750px;
+    width: 100%;
+}
+
+.project h2{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.project p{
     max-width: 600px;
     margin: auto;
     text-align: center;
     color: #ccc;
 }
 
-.project-grid{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    height: 750px;
-}
-
-.project-grid .bmi-calculator, .calculator, .weather, .kenangan-senja{
+.project .bmi-calculator, .calculator, .weather, .kenangan-senja{
     background-size: cover;
     background-position: center;
     position: relative;
@@ -265,17 +295,12 @@ section p{
 }
 
 .content p{
-    /* margin-top: 30rem; */
     position: absolute;
     top: 50px;
     text-align: center;
     padding: 1rem;
     font-weight: 800;
     font-size: 1.2rem;
-}
-
-.social-links {
-    margin-top: 1rem;
 }
 
 .content a{
@@ -303,53 +328,11 @@ section p{
     background-image: url('/Assets/projects/4.png');
 }
 
-
 .content:hover{
     opacity: 1;
 }
 
-.project-grid .card .content{
-    flex: 1;
-    margin-bottom: 2rem;
-}
-
-.project-grid .card h4{
-    margin-bottom: 1rem;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.project-grid .card h3{
-    color: #fff;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-bottom: 2px dashed #fff;
-}
-
-.project-grid .card p{
-    color: #fff;
-    margin-bottom: 0.75rem;
-}
-
-.project-grid .card p i{
-    color: #ccc;
-    font-size: 1.2rem;
-    margin-right: 0.3rem;
-}
-.project-grid .card button{
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
-}
-
-.project-grid .card button:hover{
-    background-color: #1e40af;
-    border-color: #1e40af;
-}
-
+/* Contact Section */
 .footer-container{
     /* position: relative; */
     /* display: flex; */
@@ -527,43 +510,31 @@ footer .credit {
 
 /* Tablet */
 /* @media (max-width : 758px) {
-    .nav-links{
-        display: none;
-    }
-    .container {
-        margin: 4rem 0 0 0; */
-        /* top: 10%; */
-    /* }
-
-    header{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    header .image{
-        grid-area: 1/1/2/2;
-    }
-    .features{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .pricing{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    footer{
-        grid-template-columns: 1fr 200px;
+    .about .row {
+        flex-wrap: wrap;
     }
 } */
 
 /* Mobile Phone */
-/* @media (max-width : 450px) {
-    header .image::before{
-        display: none;
+@media (max-width : 450px) {
+    html {
+        font-size: 50%;
     }
-    .features{
-        grid-template-columns: repeat(1, 1fr);
+
+    .about .row {
+        display: flex;
+        flex-direction: column;
     }
-    .pricing{
-        grid-template-columns: repeat(1, 1fr);
+    .project .row {
+        display: flex;
+        flex-direction: column;
     }
-    footer{
-        grid-template-columns: 1fr 150px;
+    .project .bmi-calculator, .calculator, .weather, .kenangan-senja{
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }    
+    .content:hover{
+        opacity: 1;
     }
-} */
+}
