@@ -13,6 +13,7 @@
     <title>Personal Portfolio #1 | Olan</title>
   </head>
   <body>
+    <!-- NavBar start -->
     <nav>
       <div class="nav-logo">
         <a href="#">
@@ -27,9 +28,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="btn">Resume</button>
+      <a href="/Assets/Resume.pdf" download="Resume.pdf">
+        <button class="btn">Resume</button></a
+      >
     </nav>
+    <!-- NavBar End -->
 
+    <!-- Hero section start -->
     <section class="hero">
       <main>
         <span class="blur"></span>
@@ -43,7 +48,9 @@
               perspective and a diverse skill set from my previous profession as
               a staff administrator for 6 years.
             </p>
-            <button class="btn">Hire Me</button>
+            <a href="#" class="hire-me-button"
+              ><button class="btn">Hire Me</button>
+            </a>
           </div>
           <div>
             <img src="./Assets/3.png" alt="" />
@@ -51,7 +58,9 @@
         </div>
       </main>
     </section>
+    <!-- Hero section end -->
 
+    <!-- About section start -->
     <section class="about" id="about">
       <!-- <p>
         As a career switcher to web development, i bring a unique perspective
@@ -88,7 +97,9 @@
         </div>
       </div>
     </section>
+    <!-- About section end -->
 
+    <!-- Project section start -->
     <section class="project" id="project">
       <h2>My Recent Work</h2>
       <p>Here are a few past projects I've worked on</p>
@@ -142,13 +153,15 @@
         </div>
       </div>
     </section>
+    <!-- Project section end -->
 
+    <!-- Contact section start -->
     <section class="contact" id="contact">
       <div class="row">
         <div class="left">
           <h4>Let's get in touch</h4>
           <img src="/Assets/hero.png" alt="" class="image" />
-          <p>Connect with us</p>
+          <p>Connect with me</p>
           <ul class="social-media">
             <li>
               <a href="https://web.facebook.com/ZVMirror" target="_blank"
@@ -173,7 +186,7 @@
           </ul>
         </div>
         <div class="right">
-          <form action="">
+          <form action="" id="form">
             <h4>Contact Us</h4>
             <div class="input-box">
               <label for="">Name</label>
@@ -187,11 +200,11 @@
               <label for="">Message</label>
               <textarea name="" id="message" cols="21" rows="3"> </textarea>
             </div>
-            <input type="submit" class="btn" value="Submit" />
+            <input type="submit" class="btn" id="submit" value="Submit" />
           </form>
         </div>
         <div class="media">
-          <p>Connect with us</p>
+          <p>Connect with me</p>
           <ul class="social-media">
             <li>
               <a href="https://web.facebook.com/ZVMirror" target="_blank"
@@ -217,7 +230,9 @@
         </div>
       </div>
     </section>
+    <!-- Contact section end -->
 
+    <!-- Footer section start -->
     <footer>
       <div class="credit">
         <span>Copyright © 2024 All Rights Reserved, Olan</span> <br />
@@ -225,7 +240,56 @@
         <a href="#">Terms</a>
       </div>
     </footer>
+    <!-- Footer section end -->
 
-    <script src="/js/script.js"></script>
+    <!-- Modal box start -->
+    <div class="modal" id="hire-me-modal">
+      <div class="modal-container">
+        <form action="">
+          <h4>Let me know here ;)</h4>
+          <div class="input-box">
+            <label for="">Name</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label for="">Email</label>
+            <input type="email" required />
+          </div>
+          <div class="input-box">
+            <label for="">Message</label>
+            <textarea name="" id="message" cols="21" rows="3"> </textarea>
+          </div>
+          <input type="submit" class="btn" value="Submit" />
+          <div class="social-media">
+            <p>Connect with me</p>
+            <ul>
+              <li>
+                <a href="https://web.facebook.com/ZVMirror" target="_blank"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/z_olan/" target="_blank"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:olanzul@gmail.com" target="_blank"
+                  ><i class="ri-mail-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/olanzul" target="_blank"
+                  ><i class="ri-linkedin-box-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modal box end -->
+
+    <script src="/js/code.js"></script>
   </body>
 </html>
